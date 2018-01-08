@@ -1,41 +1,33 @@
 # &lt;status-indicator/&gt;
 
-A web component to show status indicator as colored dots. [Demo](https://tnhu.github.io/status-indicator/).
+A Vue.js component to show status indicator as colored dots. Demo.
 
 ![Screenshot](https://i.imgur.com/v1vJ3Ue.gif)
 
 ## Install
 
 ```bash
-npm i status-indicator
+npm i vue-status-indicator
 ```
 
 ## Usage
 
-Import status-indicator.css in your CSS or JavaScript.
-
-CSS:
-
-```css
-@import 'status-indicator'
-```
-
-JavaScript:
+Import `status-indicator`.
 
 ```javascript
-import 'status-indicator/styles.css'
+import 'vue-status-indicator'
 ```
 
-HTML/React:
+HTML/Vue:
 
 ```html
-<status-indicator active pulse></status-indicator>
+<status-indicator type="active" pulse></status-indicator>
 ```
 
 ### API
 
 ```html
-<status-indicator active|positive|intermediary|negative|pulse></status-indicator>
+<status-indicator type="active|positive|intermediary|negative" pulse="true|false"></status-indicator>
 ```
 
 You are able to customize the dot by CSS variables, default configuration is listed below.
@@ -66,6 +58,22 @@ You are able to customize the dot by CSS variables, default configuration is lis
   --status-indicator-color-negative-transparent: rgba(255, 77, 77, 0);
 }
 ```
+
+## Development
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
 
 ### Supported Browsers
 

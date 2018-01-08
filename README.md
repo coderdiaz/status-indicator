@@ -1,6 +1,7 @@
 # &lt;status-indicator/&gt;
 
 A Vue.js component to show status indicator as colored dots. [Demo](https://coderdiaz.me/vue-status-indicator/).
+This is a fork of [status-indicator](https://github.com/tnhu/status-indicator) with a few changes for use with Vue.js.
 
 ![Screenshot](https://i.imgur.com/v1vJ3Ue.gif)
 

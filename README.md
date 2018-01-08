@@ -21,13 +21,13 @@ import 'vue-status-indicator'
 HTML/Vue:
 
 ```html
-<status-indicator type="active" pulse></status-indicator>
+<status-indicator active pulse></status-indicator>
 ```
 
 ### API
 
 ```html
-<status-indicator type="active|positive|intermediary|negative" pulse="true|false"></status-indicator>
+<status-indicator active|positive|intermediary|negative pulse></status-indicator>
 ```
 
 You are able to customize the dot by CSS variables, default configuration is listed below.

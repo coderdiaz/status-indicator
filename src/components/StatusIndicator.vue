@@ -6,4 +6,3 @@ export default {
   name: 'StatusIndicator'
 }
 </script>
-<style src="../assets/styles.css"></style>

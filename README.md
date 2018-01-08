@@ -11,8 +11,21 @@ npm i vue-status-indicator
 ```
 
 ## Usage
+Import status-indicator.css in your CSS or JavaScript.
 
-Import `status-indicator`.
+CSS:
+
+```css
+@import 'vue-status-indicator'
+```
+
+JavaScript:
+
+```javascript
+import 'vue-status-indicator/styles.css'
+```
+
+Import component `status-indicator`.
 
 ```javascript
 import 'vue-status-indicator'

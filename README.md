@@ -1,6 +1,6 @@
 # &lt;status-indicator/&gt;
 
-A Vue.js component to show status indicator as colored dots. Demo.
+A Vue.js component to show status indicator as colored dots. [Demo](https://coderdiaz.me/vue-status-indicator/).
 
 ![Screenshot](https://i.imgur.com/v1vJ3Ue.gif)
 
@@ -34,7 +34,17 @@ import 'vue-status-indicator'
 HTML/Vue:
 
 ```html
-<status-indicator active pulse></status-indicator>
+<template>
+  <status-indicator active pulse></status-indicator>
+</template>
+<script>
+  import StatusIndicator from 'vue-status-indicator'
+  export default {
+    components: {
+      StatusIndicator
+    }
+  }
+</script>
 ```
 
 ### API

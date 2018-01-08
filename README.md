@@ -29,7 +29,7 @@ import 'vue-status-indicator/styles.css'
 Import component `status-indicator`.
 
 ```javascript
-import 'vue-status-indicator'
+import StatusIndicator from 'vue-status-indicator'
 ```
 
 HTML/Vue:

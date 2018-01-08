@@ -5,6 +5,7 @@
   "author": "Javier Diaz <coderdiaz@gmail.com>",
   "license": "MIT",
   "main": "./src/components/StatusIndicator.vue",
+  "style": "styles.css",
   "keywords": [
     "status",
     "indicator",

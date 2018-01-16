@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <span class="status-indicator"></span>
 </template>
 <script>

@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div id="app">
     <h1>
     &lt;vue-status-indicator/&gt;</h1>

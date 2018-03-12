@@ -11,6 +11,10 @@ This is a fork of [status-indicator](https://github.com/tnhu/status-indicator) w
 npm i vue-status-indicator
 ```
 
+### Donate
+
+<a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/coderdiaz"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+
 ## Usage
 Import status-indicator.css in your CSS or JavaScript.
 

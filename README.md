@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-A Vue.js component to show status indicator as colored dots. [Demo](https://coderdiaz.me/vue-status-indicator/). This is a fork of [status-indicator](https://github.com/tnhu/status-indicator) with a few changes for use with Vue.js.
+A Vue.js component to show status indicator as colored dots. <a href="https://coderdiaz.me/vue-status-indicator/">Demo</a>. This is a fork of <a href="https://github.com/tnhu/status-indicator">status-indicator</a> with a few changes for use with Vue.js.
 </p>
 
 <p align="center">

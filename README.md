@@ -1,14 +1,31 @@
-# &lt;status-indicator/&gt;
+<p align="center">
+  <a href="https://github.com/coderdiaz/vue-tiny-pagination">
+    <img src="https://vuejs.org/images/logo.png" width="120">
+  </a>
+  <h2 align="center">&lt;vue-status-indicator /&gt;</h2>
+</p>
 
-A Vue.js component to show status indicator as colored dots. [Demo](https://coderdiaz.me/vue-status-indicator/).
-This is a fork of [status-indicator](https://github.com/tnhu/status-indicator) with a few changes for use with Vue.js.
+<p align="center">
+A Vue.js component to show status indicator as colored dots. [Demo](https://coderdiaz.me/vue-status-indicator/). This is a fork of [status-indicator](https://github.com/tnhu/status-indicator) with a few changes for use with Vue.js.
+</p>
+
+<p align="center">
+    <a href="https://npmjs.com/package/vue-status-indicator"><img src="https://img.shields.io/npm/dt/vue-status-indicator.svg?style=flat-square"></a>
+    <a href="https://github.com/coderdiaz/vue-status-indicator/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"></a>
+    <a href="https://github.com/coderdiaz/vue-status-indicator/stargazers"><img src="https://img.shields.io/github/stars/coderdiaz/vue-status-indicator.svg?style=flat-square"></a>
+    <a href="http://npmjs.com/package/vue-status-indicator"><img src="https://img.shields.io/npm/v/vue-status-indicator.svg?style=flat-square"></a>
+    <a href="http://npmjs.com/package/vue-status-indicator"><img src="https://img.shields.io/npm/dm/vue-status-indicator.svg?style=flat-square"></a>
+    <a href="https://www.paypal.me/coderdiaz"><img src="https://img.shields.io/badge/invite-coffee-red.svg?style=flat-square"></a>
+</a>
+
+---
 
 ![Screenshot](https://i.imgur.com/v1vJ3Ue.gif)
 
 ## Install
 
 ```bash
-npm i vue-status-indicator
+npm i -S vue-status-indicator
 ```
 
 ### Donate

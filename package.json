@@ -1,11 +1,18 @@
 {
   "name": "vue-status-indicator",
-  "description": "A Vue.js component to show status indicator as colored dots.",
+  "description": "A Vue component to show status indicator as colored dots.",
   "version": "1.0.0",
   "author": "Javier Diaz <coderdiaz@gmail.com>",
   "license": "MIT",
-  "main": "./src/components/StatusIndicator.vue",
   "style": "styles.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdiaz/vue-status-indicator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderdiaz/vue-status-indicator/issues"
+  },
+  "homepage": "https://coderdiaz.me/vue-status-indicator",
   "keywords": [
     "status",
     "indicator",
@@ -17,11 +24,19 @@
     "pulse dot",
     "animation"
   ],
-  "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.js --format iife --file dist/vue-status-indicator.min.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-status-indicator.esm.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-status-indicator.umd.js",
+    "compile:docs": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy:docs": "push-dir --dir=public --branch=gh-pages",
+    "prepublish": "npm run build"
   },
+  "main": "dist/vue-status-indicator.umd.js",
+  "module": "dist/vue-status-indicator.esm.js",
+  "unpkg": "dist/vue-status-indicator.min.js",
   "dependencies": {
     "vue": "^2.5.11"
   },
@@ -40,6 +55,10 @@
     "file-loader": "^1.1.4",
     "node-sass": "^4.5.3",
     "push-dir": "^0.4.1",
+    "rollup": "^0.58.2",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-uglify-es": "^0.0.1",
+    "rollup-plugin-vue": "^4.0.1",
     "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "vue-loader": "^13.0.5",

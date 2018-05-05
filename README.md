@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://github.com/coderdiaz/vue-tiny-pagination">
+  <a href="https://github.com/coderdiaz/vue-status-indicator">
     <img src="https://vuejs.org/images/logo.png" width="120">
   </a>
   <h2 align="center">&lt;vue-status-indicator /&gt;</h2>
 </p>
 
 <p align="center">
-A Vue.js component to show status indicator as colored dots. <a href="https://coderdiaz.me/vue-status-indicator/">Demo</a>. This is a fork of <a href="https://github.com/tnhu/status-indicator">status-indicator</a> with a few changes for use with Vue.js.
+A Vue component to show status indicator as colored dots. <a href="https://coderdiaz.me/vue-status-indicator/">Demo</a>. This is a fork of <a href="https://github.com/tnhu/status-indicator">status-indicator</a> with a few changes for use with Vue.js.
 </p>
 
 <p align="center">
@@ -68,6 +68,13 @@ HTML/Vue:
   }
 </script>
 ```
+
+Usage in Browser:
+```
+https://unpkg.com/vue-status-indicator@latest/dist/vue-status-indicator.min.js
+https://unpkg.com/vue-status-indicator@latest/styles.css
+```
+**Example**: https://jsfiddle.net/coderdiaz/k038cdf3/
 
 ### API
 

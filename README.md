@@ -50,7 +50,7 @@ import 'vue-status-indicator/styles.css'
 Import component `status-indicator`.
 
 ```javascript
-import StatusIndicator from 'vue-status-indicator'
+import { StatusIndicator } from 'vue-status-indicator'
 ```
 
 HTML/Vue:
@@ -60,7 +60,7 @@ HTML/Vue:
   <status-indicator active pulse></status-indicator>
 </template>
 <script>
-  import StatusIndicator from 'vue-status-indicator'
+  import { StatusIndicator } from 'vue-status-indicator'
   export default {
     components: {
       StatusIndicator

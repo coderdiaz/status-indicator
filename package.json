@@ -1,7 +1,7 @@
 {
   "name": "vue-status-indicator",
   "description": "A Vue component to show status indicator as colored dots.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Javier Diaz <coderdiaz@gmail.com>",
   "license": "MIT",
   "style": "styles.css",

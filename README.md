@@ -1,87 +1,67 @@
-<p align="center">
-  <a href="https://github.com/coderdiaz/vue-status-indicator">
-    <img src="https://vuejs.org/images/logo.png" width="120">
-  </a>
-  <h2 align="center">&lt;vue-status-indicator /&gt;</h2>
-</p>
+# [Status Indicator](https://github.com/coderdiaz/vue-status-indicator) &middot; [![NPMVERSION](https://img.shields.io/npm/v/vue-status-indicator.svg)](http://npmjs.com/package/vue-status-indicator) [![GITHUBSTARS](https://img.shields.io/github/stars/coderdiaz/vue-status-indicator.svg)](https://github.com/coderdiaz/vue-status-indicator/stargazers) [![BUILD](https://travis-ci.org/coderdiaz/vue-status-indicator.svg?branch=master)](https://travis-ci.org/coderdiaz/vue-status-indicator) [![DOWNLOADS](https://img.shields.io/npm/dt/vue-status-indicator.svg)](https://npmjs.com/package/vue-status-indicator)
 
-<p align="center">
-A Vue component to show status indicator as colored dots. <a href="https://coderdiaz.me/vue-status-indicator/">Demo</a>. This is a fork of <a href="https://github.com/tnhu/status-indicator">status-indicator</a> with a few changes for use with Vue.js.
-</p>
+A Vue component to show a status indicator as colored dots. This is a fork of [status-indicator](https://github.com/tnhu/status-indicator) with a few changes for use it with Vue.
 
-<p align="center">
-    <a href="https://npmjs.com/package/vue-status-indicator"><img src="https://img.shields.io/npm/dt/vue-status-indicator.svg?style=flat-square"></a>
-    <a href="https://github.com/coderdiaz/vue-status-indicator/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"></a>
-    <a href="https://github.com/coderdiaz/vue-status-indicator/stargazers"><img src="https://img.shields.io/github/stars/coderdiaz/vue-status-indicator.svg?style=flat-square"></a>
-    <a href="http://npmjs.com/package/vue-status-indicator"><img src="https://img.shields.io/npm/v/vue-status-indicator.svg?style=flat-square"></a>
-    <a href="http://npmjs.com/package/vue-status-indicator"><img src="https://img.shields.io/npm/dm/vue-status-indicator.svg?style=flat-square"></a>
-    <a href="https://www.paypal.me/coderdiaz"><img src="https://img.shields.io/badge/invite-coffee-red.svg?style=flat-square"></a>
-</a>
+## Install/Usage
+<!-- Replace the docs for usage the plugin -->
+```sh
+# Install with npm
+$ npm i -S vue-status-indicator
 
----
-
-![Screenshot](https://i.imgur.com/v1vJ3Ue.gif)
-
-## Install
-
-```bash
-npm i -S vue-status-indicator
+# or yarn
+$ yarn add vue-status-indicator
 ```
-
-### Donate
-
-<a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/coderdiaz"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
-
-## Usage
-Import status-indicator.css in your CSS or JavaScript.
-
-CSS:
-
-```css
-@import 'vue-status-indicator'
-```
-
-JavaScript:
-
-```javascript
-import 'vue-status-indicator/styles.css'
-```
-
-Import component `status-indicator`.
-
-```javascript
-import { StatusIndicator } from 'vue-status-indicator'
-```
-
-HTML/Vue:
 
 ```html
-<template>
-  <status-indicator active pulse></status-indicator>
-</template>
-<script>
-  import { StatusIndicator } from 'vue-status-indicator'
-  export default {
-    components: {
-      StatusIndicator
-    }
-  }
-</script>
+<div id="app">
+  <status-indicator status="active" />
+</div>
 ```
 
-Usage in Browser:
-```
-https://unpkg.com/vue-status-indicator@latest/dist/vue-status-indicator.min.js
-https://unpkg.com/vue-status-indicator@latest/styles.css
-```
-**Example**: https://jsfiddle.net/coderdiaz/k038cdf3/
-
-### API
-
-```html
-<status-indicator active|positive|intermediary|negative pulse></status-indicator>
+You can use **Local Registration**:
+```js
+import { StatusIndicator } from 'vue-status-indicator';
+new Vue({
+  el: '#app',
+  components: {
+    StatusIndicator,
+  },
+});
 ```
 
+or **Global Registration**:
+```js
+import StatusIndicator from 'vue-status-indicator';
+Vue.use(StatusIndicator);
+
+// or with a custom component name
+import { StatusIndicator } from 'vue-status-indicator';
+Vue.component('custom-name', StatusIndicator);
+```
+
+### Usage in browser
+<!-- Write an example for use the plugin in browser from CDN -->
+In browser you can use Unpkg, Jsdelivr, CDN.js, etc.
+```sh
+# Unpkg
+https://unpkg.com/vue-status-indicator@latest/dist/vue-status-indicator.js
+
+# JSDelivr
+https://cdn.jsdelivr.net/npm/vue-status-indicator@latest/dist/vue-status-indicator.min.js
+```
+
+### Supported Browsers
+Latest versions of Chrome/Firefox/Safari/IE/Opera.
+
+## Documentation
+<!-- Add all documentation about the plugin: props, events, etc -->
+### Props
+|Name|Description|Type|Default|Required|
+|---|---|---|---|---|
+|status|Status color for the dot|String|""|false|
+|pulse|Enable or disable the pulse effect|Boolean|false|false|
+
+### Customatization
 You are able to customize the dot by CSS variables, default configuration is listed below.
 
 ```css
@@ -111,26 +91,8 @@ You are able to customize the dot by CSS variables, default configuration is lis
 }
 ```
 
-## Development
+## Community
+All feedback and suggestions are welcome!
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-
-### Supported Browsers
-
-Latest versions of Chrome/Firefox/Safari/IE/Opera.
-
-### LICENSE
-
-MIT
+## License
+This is a open-source software licensed under the [MIT license](https://raw.githubusercontent.com/coderdiaz/vue-status-indicator/master/LICENSE)

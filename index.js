@@ -1,25 +1,33 @@
-import StatusIndicator from './src/components/StatusIndicator.vue'
+import StatusIndicator from './packages/StatusIndicator/index';
 
-export function install (Vue) {
-  if (install.installed) return
-  install.installed = true
-  Vue.component('StatusIndicator', StatusIndicator)
+const components = [
+  StatusIndicator,
+];
+
+export function install(Vue) {
+  if (install.installed) return;
+  install.installed = true;
+  components.forEach((component) => {
+    Vue.component(component.name, component);
+  });
 }
 
 const plugin = {
-  install
-}
+  install,
+};
 
-let GlobalVue = null
+let GlobalVue = null;
 if (typeof window !== 'undefined') {
-  GlobalVue = window.Vue
+  GlobalVue = window.Vue;
 } else if (typeof global !== 'undefined') {
-  GlobalVue = global.Vue
+  GlobalVue = global.Vue;
 }
-
 if (GlobalVue) {
-  GlobalVue.use(plugin)
+  GlobalVue.use(plugin);
 }
 
-export { StatusIndicator }
-export default plugin
+export {
+  StatusIndicator,
+};
+
+export default plugin;

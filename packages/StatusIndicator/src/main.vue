@@ -1,5 +1,5 @@
 <template>
-  <span class="status-indicator"></span>
+  <span class="status-indicator" :[status]="true" :pulse="pulse"></span>
 </template>
 <script>
 export default {
@@ -17,10 +17,6 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
-  mounted() {
-    if (this.status !== '') this.$el[this.status] = '';
-    if (this.pulse) this.$el.pulse = '';
   },
 };
 </script>

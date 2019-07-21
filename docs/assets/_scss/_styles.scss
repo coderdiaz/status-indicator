@@ -45,6 +45,10 @@ body {
     span {
       display: block;
     }
+
+    .code-comment {
+      color: lighten($gray-dark-color, 20%);
+    }
   }
 }
 
@@ -66,12 +70,13 @@ body {
     .example-list {
       margin-top: 15px;
       .example-item {
-        padding: 10px 15px;
+        padding: 15px 20px;
         background: white;
         margin-bottom: 0;
         border: 1px solid lighten($gray-dark-color, 50%);
         margin-bottom: -1px;
         list-style: none;
+        font-weight: 700;
 
         span {
           float: right;

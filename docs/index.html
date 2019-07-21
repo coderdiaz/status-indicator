@@ -1,0 +1,61 @@
+---
+layout: base
+permalink: /
+---
+<section class="section-hero">
+  <div class="container">
+    <h1 class="hero-title"><span class="hero-title-first">Status</span> Indicator</h1>
+    <h2 class="hero-subtitle">A Vue component to show status indicator as colored dots.</h2>
+  </div>
+</section>
+<section class="section-installation">
+  <div class="container">
+    <h3 class="heading-section">Install/Usage</h3>
+    <div class="code-space">
+      <span># Install with code</span>
+      <span>$ npm i -S vue-status-indicator</span>
+      <br>
+      <span># or yarn</span>
+      <span>yarn add vue-status-indicator</span>
+    </div>
+  </div>
+</section>
+<section class="section-example">
+  <div class="container">
+    <div class="example-heading">
+      <span class="heading-section">Example</span>
+      <button class="btn-action" @click.prevent="toggleEffect">
+        <span v-if="pulse">Disable Pulse</span>
+        <span v-else>Enable Pulse</span>
+      </button>
+    </div>
+    <div class="example-content">
+      <ul class="example-list">
+        <li class="example-item">
+          Git Operations
+          <status-indicator status="positive" :pulse="pulse" />
+        </li>
+        <li class="example-item">
+          API Requests
+          <status-indicator status="intermediary" :pulse="pulse" />
+        </li>
+        <li class="example-item">
+          Issue, PRs, Dashboard, Projects
+          <status-indicator :pulse="pulse" />
+        </li>
+        <li class="example-item">
+          Notifications
+          <status-indicator status="intermediary" :pulse="pulse" />
+        </li>
+        <li class="example-item">
+          Gists
+          <status-indicator status="positive" :pulse="pulse" />
+        </li>
+        <li class="example-item">
+          GitHub Pages
+          <status-indicator status="negative" :pulse="pulse" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

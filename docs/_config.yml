@@ -1,0 +1,17 @@
+title: Vue Status Indicator
+description: A Vue component to show a status indicator as colored dots.
+
+baseurl: ""
+url: "https://coderdiaz.me/vue-status-indicator"
+markdown: kramdown
+exclude: []
+
+# Alias to directories
+assets:
+  css: assets/css/
+  js: assets/js/
+
+# SASS configuration
+sass:
+  sass_dir: assets/_scss
+  style: :compressed

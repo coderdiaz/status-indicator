@@ -1,0 +1,8 @@
+{% include ga.html %}
+{% if jekyll.environment == "production" %}
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+{% else %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+{% endif %}
+<script src="https://unpkg.com/vue-status-indicator@latest/dist/vue-status-indicator.js"></script>
+<script src="{{ 'app.js' | prepend: site.assets.js }}"></script>

@@ -1,6 +1,6 @@
 {
   "name": "vue-status-indicator",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A template for create a Vue Plugin with Rollup",
   "license": "MIT",
   "private": false,
